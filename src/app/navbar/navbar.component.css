@@ -1,7 +1,10 @@
-body{
+nav{
   font-family: "Sofia", sans-serif;
 }
 
+.navbar .nav-link {
+  color: black !important;
+}
 
 button {
   float: right;
@@ -17,3 +20,4 @@ button {
   button:hover {
   background: aquamarine;
   }
+
