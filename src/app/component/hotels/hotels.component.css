@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand{
+  font-size: 30px;
+}
+
+.navbar-nav{
+  display: flex;
+  margin: 1.5%;
+  font-size: 20px;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.mr-auto, .mx-auto{
+  margin-right: auto;
+}
+
+@media(min-width:992px){
+  .navbar-expand-lg, .navbar-collapse{
+    display: flex;
+    flex-basis: auto;
+  }
+}
+/* navbar end */   
+
+
+
+body{
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  line-height: 15px; 
+  color: #131312;}
+
+.btn,a,a:hover{
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline:0 ;}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1em;
+  margin: 0;}
+h1{
+  font-size: 5em;
+}
+h1.title,h2{
+  font-size: 2em;
+  line-height: 3em;}
+
+h3{
+  font-size: 1.5em;
+   margin-bottom: 0.70em;
+  }
+h4{
+  font-size: 1.25em;
+   margin-bottom: 0.75em;
+  }
+p{
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (min-width: 40rem) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .card {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_body {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{background-color: #bfa145;border-color: #bfa145;}
+.pagination>li>a, .pagination>li>span{color: #bfa145;}
+.spacer{padding:6em 0; }

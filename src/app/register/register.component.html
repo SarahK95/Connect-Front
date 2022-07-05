@@ -37,20 +37,20 @@
               <br>
               <h5>Sign Up</h5>
               <div class="mb-3">
-                <input type="password" class="form-control" name="password" placeholder="Enter your username">
+                <input [(ngModel)]="register.username" type="text" class="form-control" name="username" placeholder="Enter your username">
 
               </div>
               <div class="mb-3">
-                <input type="password" class="form-control" name="password" placeholder="Enter your email address">
+                <input [(ngModel)]="register.email" type="email" class="form-control" name="email" placeholder="Enter your email address">
               </div>
               <div class="mb-3">
-                <input type="password" class="form-control" name="password" placeholder="Enter your password">
+                <input [(ngModel)]="register.password" type="password" class="form-control" name="password" placeholder="Enter your password">
               </div>
               <div class="mb-3">
-                <input type="password" class="form-control" name="password" placeholder="Confirm your password">
+                <input [(ngModel)]="register.password2" type="password" class="form-control" name="password2" placeholder="Confirm your password">
               </div>
 
-              <button type="submit" class="btn btn-dark">Register</button>
+              <button (click)="registerUser();" type="submit" class="btn btn-dark">Register</button>
             </form>
 
             <br>
