@@ -1,0 +1,19 @@
+body{
+  font-family: "Sofia", sans-serif;
+}
+
+
+button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: grey;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  }
+
+  button:hover {
+  background: black;
+  }
