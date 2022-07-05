@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AdminlogComponent } from './adminlog/adminlog.component';
+import { AdminsignComponent } from './adminsign/adminsign.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RegisterComponent,
     LoginComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AdminlogComponent,
+    AdminsignComponent
   ],
   imports: [
     BrowserModule,
