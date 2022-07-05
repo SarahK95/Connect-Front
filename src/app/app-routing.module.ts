@@ -7,20 +7,24 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserDashboardComponent } from './dashboard/user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [
   {path: 'hotels', component: HotelsComponent},
   {path: 'hotelpage', component: HotelpageComponent},
+  {path: 'hotels/hotelpage/:id', component: HotelpageComponent},
+
   {path: 'booking', component: BookingFormComponent},
   { path: 'home', component: HomeComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'user-dashboard', component: UserDashboardComponent},
+  { path: 'admin-dashboard', component: AdminDashboardComponent},
   { path: '', redirectTo:"/home", pathMatch:"full"},
   { path:'**', component: NotFoundComponent},
   
 ];
-
-
 
 
 

@@ -14,7 +14,6 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { UserDashboardComponent } from './dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 
@@ -29,7 +28,6 @@ import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashb
     LoginComponent,
     NavbarComponent,
     NotFoundComponent,
-    DashboardComponent,
     UserDashboardComponent,
     AdminDashboardComponent
   ],
