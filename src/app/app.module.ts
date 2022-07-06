@@ -18,6 +18,7 @@ import { AdminlogComponent } from './adminlog/adminlog.component';
 import { AdminsignComponent } from './adminsign/adminsign.component';
 import { UserDashboardComponent } from './dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
+import {FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashb
     HomeComponent,
     RegisterComponent,
     LoginComponent,
+    FooterComponent,
     NavbarComponent,
     NotFoundComponent,
     AdminlogComponent,
