@@ -5,13 +5,7 @@ header,
     height: 80vh;
 }
 
-.view{
-    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tourismupdate.co.za%2Fsites%2Fdefault%2Ffiles%2Fimages%2Farticle%2F202103%2Fhoughtonhotel.jpg&f=1&nofb=1")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 body {
   background: #fff;
   color: #333333;
@@ -36,7 +30,7 @@ body {
   min-height: 500px;
   max-width: 100%;
   overflow-x: hidden;
-  background-image: url('../../assets/home.jpg');
+  background-image: url('../../assets/hote.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,18 +56,38 @@ footer{
 }
 
 
-/* button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: grey;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  } */
 
-  /* button:hover {
-  background: aquamarine;
-  }
- */
+.form_book {
+  /* background: transparent; */
+  margin-top: -104px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.179); */
+  margin-bottom: 15px;
+}
+
+.linear{
+  /* background: linear-gradient(#30726E, #FAF0F0, #DC8546); */
+  /* filter: blur(20px); */
+  height: 100vh;
+}
+
+.card{
+    
+  border:none;
+}
+
+.user-content p{
+  margin-top:5px;
+  font-size:12px;
+}
+
+
+.ratings i{
+  color:#DFAA5B;
+}
+
