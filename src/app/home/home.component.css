@@ -6,13 +6,52 @@ header,
 }
 
 .view{
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.webp")no-repeat center center fixed;
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tourismupdate.co.za%2Fsites%2Fdefault%2Ffiles%2Fimages%2Farticle%2F202103%2Fhoughtonhotel.jpg&f=1&nofb=1")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+body {
+  background: #fff;
+  color: #333333;
+  /* margin-top: 5rem; */
+  
+}
+.catLink a{
+  color: #ee4723 !important;
+  
+}
+.catLink a:current{
+  color: black !important;
+  
+}
+.catLink input{
+  border-radius: 40px !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+}
+.image-background {
+  height: 100vh;
+  min-height: 500px;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-image: url('../../assets/home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.image-background h1 {
+  color: #fff;
+  font-weight: bolder;
+  font-family: Newyork;
+}
+.image-background p {
+  color: #fff;
+  font-weight:500;
+  font-family: Gotham Pro;
+}
 /* body{
   font-family: " Poppins";
   transition: background-color .5s;
