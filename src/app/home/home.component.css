@@ -38,7 +38,8 @@ body {
 }
 .image-background h1 {
   color: #fff;
-  font-weight: bolder;
+  font-weight: 900;
+  font-size: 70px;
   font-family: Newyork;
 }
 .image-background p {
@@ -52,7 +53,7 @@ body {
 } */
 
 footer{
-  font-family: "Poppins";
+  font-family: Gotham Pro;
 }
 
 
