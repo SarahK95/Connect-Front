@@ -8,7 +8,11 @@
 }
 
 .navbar .navbar-nav .nav-item .active {
-    color: #67971f;
+    color: #60D143;
+}
+
+.navbar .navbar-nav .nav-item :hover{
+    color: #DFAA5B;
 }
 
 a.fas {
