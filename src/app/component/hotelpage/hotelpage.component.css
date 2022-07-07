@@ -3,7 +3,6 @@
 
 
 .landingpage{
-  background-image: url('/assets/hotel.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +14,7 @@
   font-size: large;
   
 }
+
 .landing h1{
   padding: 2px;
   margin: 5px;

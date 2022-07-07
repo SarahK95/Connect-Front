@@ -23,11 +23,13 @@
   </head>  
 <body>
   <!-- home page-->
-  <section>
-    <div class="landingpage">
-      <h1 class="fw-bold">WELCOME TO BON HOTEL</h1>
-      <P class="fw-bold">Good people, Good thinking, Good Feeling </P>
-      <!-- <a href=" " class="btn btn-lg btn-dark" type="button">EXPLORE</a>  -->
+  <section >
+    <div class="landingpage" style="background-image: url('{{hotel.cover_image}}');">
+    <!-- <div class='container-fluid landingpage h-100 mask' style="background-color: rgba(0, 0, 0, 0.556);"> -->
+
+      <h1 class="fw-bold" style="font-family: Newyork;font-size: 50px; font-weight: bold;">WELCOME TO {{hotel.hotel_name}}</h1>
+      <P class="fw-bold" style="font-family: Gotham Pro; font-size: 25px;">Good people, Good thinking, Good Feeling </P>
+    <!-- </div> -->
     </div>
   </section>
   <!--end of home page-->
@@ -75,10 +77,10 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
       <div class="card h-100 w-100" style="width: 25rem;">
-        <img src="assets/str.png" class="card-img-top" alt="...">
+        <img [src]="hotel.room1_cover" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title fw-bold">Standard Twin Room</h5>
-          <p class="card-text">Ksh.25,000/ per night.</p>
+          <h5 class="card-title fw-bold">{{hotel.room1}}</h5>
+          <p class="card-text">Ksh.{{hotel.room1_rate}}/ per night.</p>
             <p class="card-text">Enjoy your Deluxe room.</p>
           <a href="#" class="btn btn-dark" type="button">Book Now</a>
         </div>
@@ -87,10 +89,10 @@
     
       <div class="col">
         <div class="card h-100 w-100" style="width: 25rem;">
-          <img src="assets/sr.png" class="card-img-top" alt="...">
+          <img [src]="hotel.room2_cover" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Standard Room</h5>
-            <p class="card-text">Ksh.20,000/ per night.</p>
+            <h5 class="card-title fw-bold">{{hotel.room2}}</h5>
+            <p class="card-text">Ksh.{{hotel.room2_rate}}/ per night.</p>
             <p class="card-text">Enjoy your Standard room.</p>
             <a href="#" class="btn btn-dark">Book Now</a>
           </div>
@@ -99,10 +101,10 @@
     
         <div class="col">
           <div class="card h-100 w-100" style="width: 25rem;">
-            <img src="assets/svr.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Standard View Room</h5>
-                <p class="card-text">Ksh.15,000/ per night.</p>
+            <img [src]="hotel.room3_cover" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">{{hotel.room3}}</h5>
+              <p class="card-text">Ksh.{{hotel.room3_rate}}/ per night.</p>
                 <p class="card-text">Enjoy your Standard View room.</p>
                   <a href="#" class="btn btn-dark" color="60D143">Book Now</a>
                </div>
@@ -111,10 +113,10 @@
     
     <div class="col">
       <div class="card h-100 w-100" style="width: 25rem;">
-        <img src="assets/dl.png" class="card-img-top" alt="...">
+        <img [src]="hotel.room4_cover" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Deluxe Room</h5>
-            <p class="card-text">Ksh.10,500/ per night.</p>
+            <h5 class="card-title fw-bold">{{hotel.room4}}</h5>
+            <p class="card-text">Ksh.{{hotel.room4_rate}}/ per night.</p>
             <p class="card-text">Enjoy your Deluxe room.</p>
             <a href="#" class="btn btn-dark">Book Now</a>
           </div>
