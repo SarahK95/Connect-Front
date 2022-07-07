@@ -17,74 +17,76 @@
   </head>  
 
   <body>
-
-    <div class="container">
-      <div class="row">
-          <div class="card col-md-6" style="background-color: blanchedalmond;">
-            <div class="card p-4 m-4 text-center text-white bg-image" style=" background-image: url('./assets/register.png');">
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-              <h4>Sign Up We Connect</h4>
-              <p>Homes as unique as you!</p>
-            </div>  
-          </div>
+    <div class="container-fluid fullp"> 
+      <div class="row no-gutter"> 
+        <div class="col-md-6 d-none d-md-flex bg-image">
+        </div> 
+        <div class="col-md-6 bg-light shadow-sm showHover" style="border-radius:16px;"> 
           
-          <div class="card col-md-6" style="background-color: blanchedalmond;">
-            <div class="form-group col-md-6 text-light"
-            style="background-color:transparent; border-radius:15px; box-shadow: 2px 2px 5px rgba(3,3,3,0.5);"></div>
+          <div class="login d-flex align-items-center py-5"> 
+          <div class="container"> 
+
+            <div class="row"> 
+              <h3 class="text-center display-4">We Connect</h3> <br>                   
+
+              <div class="col-lg-7 col-xl-6 mx-auto ">
+                <h3 class="text-center display-4"></h3> <br>                   
+
             <form action="" method="POST">
-              
-              <h3>We Connect</h3>
-              <br>
-              <h5>Sign Up</h5>
+            <div class="form-group mb-3">
+
               <div class="mb-3">
-                <input [(ngModel)]="register.username" type="text" class="form-control" name="username" placeholder="Enter your username">
+                <input  [(ngModel)]="register.username" type="text" class="form-control rounded-pill border-0 shadow-sm px-4" name="username" placeholder="Username">
 
               </div>
               <div class="mb-3">
-                <input [(ngModel)]="register.email" type="email" class="form-control" name="email" placeholder="Enter your email address">
+                <input  [(ngModel)]="register.email" type="email" class="form-control rounded-pill border-0 shadow-sm px-4" name="email" placeholder="Email address">
               </div>
               <div class="mb-3">
-                <input [(ngModel)]="register.password" type="password" class="form-control" name="password" placeholder="Enter your password">
+                <input  [(ngModel)]="register.password" type="password" class="form-control rounded-pill border-0 shadow-sm px-4" name="password" placeholder="Password">
               </div>
               <div class="mb-3">
-                <input [(ngModel)]="register.password2" type="password" class="form-control" name="password2" placeholder="Confirm your password">
+                <input  [(ngModel)]="register.password2" type="password" class="form-control rounded-pill border-0 shadow-sm px-4" name="password2" placeholder="Confirm password">
               </div>
-
-              <button (click)="registerUser();" type="submit" class="btn btn-dark">Register</button>
+              <div class="mb-3 text-center">
+              <button (click)="registerUser();" type="submit" class="button-26 text-uppercase mb-2">Register</button>
+              </div>
+              </div>
             </form>
 
             <br>
             <div class="sign-up">
-              Already have an account? <a class="  text-blue" routerLink="/login">Log In</a>
+              <p class="text-center">
+                <small class="text-muted">
+                  Already have an account? <a style="color:#60D143; text-decoration: none;" routerLink="/login">SIGN IN</a>
+                </small>
+              </p>
+
+            </div>
+
+            <br><br>
+            <p class="text-center text-blue">Or continue with</p>
+            <div class="icons text-center">
+              <img src="./assets/google.png" style="height:20px;margin-right: 15px;">
+              
+              <img src="./assets/twitter.png" style="height:20px;margin-right: 15px;">
+           
+              <img src="./assets/facebook.png" style="height:20px;margin-right: 15px;">
+           
+              <img src="./assets/instagram.png" style="height:20px;margin-right: 15px;">
+          
+              <img src="./assets/whatsapp.png" style="height:20px;">
             </div>
           </div>  
-          <br>
-
-          <div class="container p-4 pb-0">
-            <section class="mb-4">
-    
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-twitter"></i
-                ></a>
-    
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-instagram"></i
-                ></a>
-    
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-linkedin-in"></i
-                ></a>
-    
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-github"></i
-                ></a>
-            </section> 
         
-          </div>
-  
 
         </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
   </body>
 
 

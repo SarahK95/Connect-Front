@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./hotels.component.css']
 })
 export class HotelsComponent implements OnInit {
+  
 
   hotels:any;
 

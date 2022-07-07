@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
 .navbar {
   position: relative;
   display: flex;
@@ -14,7 +14,7 @@
   display: flex;
   margin: 1.5%;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: Gotham Pro;
   align-items: center;
 }
 
@@ -34,7 +34,7 @@
 
 body{
   background-color: #fff;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: Gotham Pro;
   font-size: 15px;
   line-height: 15px; 
   color: #131312;}
@@ -49,7 +49,7 @@ body{
   outline:0 ;}
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: Newyork;
   line-height: 1em;
   margin: 0;}
 h1{
@@ -78,7 +78,7 @@ p{
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: Gotham Pro;
 }
 
 @media (min-width: 40rem) {
