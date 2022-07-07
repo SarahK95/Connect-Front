@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./hotels.component.css']
 })
 export class HotelsComponent implements OnInit {
+  
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +23,7 @@ export class HotelsComponent implements OnInit {
    )
 
   }
+
 
 
 }
