@@ -13,7 +13,7 @@ import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashb
 const routes: Routes = [
   {path: 'hotels', component: HotelsComponent},
   {path: 'hotelpage', component: HotelpageComponent},
-  {path: 'hotels/hotelpage/:id', component: HotelpageComponent},
+  {path: 'hotels/:id', component: HotelpageComponent},
 
   {path: 'booking', component: BookingFormComponent},
   { path: 'home', component: HomeComponent},

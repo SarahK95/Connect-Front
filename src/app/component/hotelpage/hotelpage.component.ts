@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {  ActivatedRoute, ParamMap } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -10,22 +10,30 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HotelpageComponent implements OnInit {
 
-  hotel:any;
-  hotelId:any;
 
-  hotels:any;
+  hotel:any;
 
 
   constructor(private activatedRoute: ActivatedRoute ,private http: HttpClient) { }
 
   ngOnInit(): void {
 
-    this.hotels = this.http.get("http://127.0.0.1:8000/hotels/").subscribe(
-     data => this.hotels = data
-   )
+  
 
 
-   this.hotelId = this.activatedRoute.snapshot.paramMap.get('id');
+   let id = this.activatedRoute.snapshot.paramMap.get("id");
+   console.log(id)
+
+
+   this.hotel = this.http.get("http://127.0.0.1:8000/hotel-detail/"+id+"/").subscribe(
+    data => this.hotel = data
+
+  )
+
   }
 
 }
+
+
+
+
