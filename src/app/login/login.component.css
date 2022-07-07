@@ -1,5 +1,5 @@
 body{
-  font-family: "Sofia", sans-serif;
+  font-family: Poppins;
 }
 
 
@@ -16,4 +16,17 @@ button {
 
   button:hover {
   background: black;
+  }
+
+  .login, .image{
+    min-height: 100vh
+  }
+  .bg-image{
+    background-image: url('../../assets/signin.jpg');
+    background-size: cover;
+    background-position: center center
+  }
+  .fullp{
+    margin-top: -12vh;
+
   }

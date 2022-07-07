@@ -17,63 +17,63 @@
   </head>  
 
   <body>
-    <br><br><br>
-    <div class="container">
-      <div class="row">
-          <div class=" shadow-sm showHover col-md-6">
-            <div class="card p-4 m-4 text-center text-white bg-image" style=" background-image: url('./assets/signin.jpg'); width:500px; height:350px;">
-              <br><br><br><br><br><br><br><br><br>
-            <h4>Sign In We Connect</h4>
-            <p>Homes as unique as you!</p>
-            </div>  
-          
-          </div>
-          
-          <div class="shadow-sm showHover col-md-6">
-            <div class="form-group col-md-6 text-light"
-            style="background-color:transparent; border-radius:15px; box-shadow: 2px 2px 5px rgba(3,3,3,0.5);"></div>
-            <form action="" method="POST">
-              
-              <h3>We Connect</h3>
-              <br>
-              <h5>Log In</h5>
-              <div class="mb-3">
-              
-                <input [(ngModel)]="login.username" type="text" class="form-control" name="username" aria-describedby="" placeholder="Enter your Username">
-              </div>
-            
-              <div class="mb-3">
-              
-                <input [(ngModel)]="login.password" type="password" class="form-control" name="password" placeholder="Enter your password">
-              </div>
-            
-
-              <button (click)="loginUser();" type="submit" class="btn btn-dark">Log In</button>
-            </form>
-            <br><br>
-            <div class="sign-up">
-              Don't have an account? <a class="  text-blue" routerLink="/register">Sign Up</a>
-            </div>
-
-            <br><br>
-            <p class="text-center text-blue">Or continue with</p>
-            <div class="icons text-center">
-              <img src="./assets/google.png" style="height:20px;margin-right: 15px;">
-              
-              <img src="./assets/twitter.png" style="height:20px;margin-right: 15px;">
-           
-              <img src="./assets/facebook.png" style="height:20px;margin-right: 15px;">
-           
-              <img src="./assets/instagram.png" style="height:20px;margin-right: 15px;">
-          
-              <img src="./assets/whatsapp.png" style="height:20px;">
-            </div>
-            <br>
-          </div>  
-          <br>
-
+    <div class="container-fluid fullp"> 
+      <div class="row no-gutter shadow-sm showHover"> 
+        <div class="col-md-6 d-none d-md-flex bg-image">
+          <!-- <h4>Sign In We Connect</h4>
+        <br/>
+            <p>Homes as unique as you!</p> -->
+        </div> 
+        <div class="col-md-6 bg-light"> 
+          <div class="login d-flex align-items-center py-5"> 
+          <div class="container"> 
+            <div class="row"> 
+              <div class="col-lg-7 col-xl-6 mx-auto "> 
+              <!-- <div class="col-lg-7 col-xl-6 mx-auto shadow-sm showHover">  -->
+                <h3 class="display-4">We Connect</h3> <br>                   
+                  <form action="" method="POST">
+                    <div class="form-group mb-3">
+                    <!-- <h5>Welcome Back</h5> -->
+                    <div class="mb-3">
+                    
+                      <input [(ngModel)]="login.username" type="text" class="form-control" name="username" aria-describedby="" placeholder="Enter your Username"  class="form-control rounded-pill border-0 shadow-sm px-4">
+                    </div>
+                  
+                    <div class="mb-3">
+                    
+                      <input [(ngModel)]="login.password" type="password" class="form-control" name="password" placeholder="Enter your password"  class="form-control rounded-pill border-0 shadow-sm px-4">
+                    </div>
+                  
+      
+                    <button (click)="loginUser();" type="submit" class="btn btn-dark">Log In</button>
+                  </div>
+                  </form>
+                  <br><br>
+                  <div class="sign-up">
+                    Don't have an account? <a class="  text-blue" routerLink="/register">Sign Up</a>
+                  </div>
+      
+                  <br><br>
+                  <p class="text-center text-blue">Or continue with</p>
+                  <div class="icons text-center">
+                    <img src="./assets/google.png" style="height:20px;margin-right: 15px;">
+                    
+                    <img src="./assets/twitter.png" style="height:20px;margin-right: 15px;">
+                 
+                    <img src="./assets/facebook.png" style="height:20px;margin-right: 15px;">
+                 
+                    <img src="./assets/instagram.png" style="height:20px;margin-right: 15px;">
+                
+                    <img src="./assets/whatsapp.png" style="height:20px;">
+                  </div>
+                  <br>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
         </div>
-    </div>
+</div>
   </body>
 
 
