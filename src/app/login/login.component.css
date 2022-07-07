@@ -13,7 +13,7 @@ body{
   } */
   .bg-image{
     
-    background-image: url('../../assets/hotel.png');
+    background-image: url('../../assets/food.webp');
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
