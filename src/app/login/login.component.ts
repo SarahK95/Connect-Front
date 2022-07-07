@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
+// import { NavbarService } from '../navbar/navbar.service';
+
 
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  // providers: [NavbarService ]
 })
 export class LoginComponent implements OnInit {
 
   login:any;
 
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router,) { }
 
   ngOnInit() {
     this.login = {

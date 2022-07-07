@@ -18,42 +18,49 @@
 
   <body>
     <div class="container-fluid fullp"> 
-      <div class="row no-gutter shadow-sm showHover"> 
+      <div class="row no-gutter"> 
         <div class="col-md-6 d-none d-md-flex bg-image">
-          <!-- <h4>Sign In We Connect</h4>
-        <br/>
-            <p>Homes as unique as you!</p> -->
         </div> 
-        <div class="col-md-6 bg-light"> 
+        <div class="col-md-6 bg-light shadow-sm showHover" style="border-radius:16px ;"> 
+          
           <div class="login d-flex align-items-center py-5"> 
           <div class="container"> 
+
             <div class="row"> 
-              <div class="col-lg-7 col-xl-6 mx-auto "> 
-              <!-- <div class="col-lg-7 col-xl-6 mx-auto shadow-sm showHover">  -->
-                <h3 class="display-4">We Connect</h3> <br>                   
+              <h3 class="text-center display-4">We Connect</h3> <br>                   
+
+              <div class="col-lg-7 col-xl-6 mx-auto ">
+                <h3 class="text-center display-4"></h3> <br>                   
+
                   <form action="" method="POST">
                     <div class="form-group mb-3">
                     <!-- <h5>Welcome Back</h5> -->
                     <div class="mb-3">
                     
-                      <input [(ngModel)]="login.username" type="text" class="form-control" name="username" aria-describedby="" placeholder="Enter your Username"  class="form-control rounded-pill border-0 shadow-sm px-4">
+                      <input [(ngModel)]="login.username" type="text" class="form-control" name="username" aria-describedby="" placeholder="Username"  class="form-control rounded-pill border-0 shadow-sm px-4">
                     </div>
                   
                     <div class="mb-3">
                     
-                      <input [(ngModel)]="login.password" type="password" class="form-control" name="password" placeholder="Enter your password"  class="form-control rounded-pill border-0 shadow-sm px-4">
+                      <input [(ngModel)]="login.password" type="password" class="mt-2 form-control" name="password" placeholder="Password"  class="form-control rounded-pill border-0 shadow-sm px-4">
                     </div>
-                  
+                    <div class="mb-3 text-center">
+                      <button (click)="loginUser();" type="submit" class="button-26 text-uppercase mb-2">Log In</button>
+
+                      </div>                  
       
-                    <button (click)="loginUser();" type="submit" class="btn btn-dark">Log In</button>
                   </div>
+
                   </form>
                   <br><br>
-                  <div class="sign-up">
-                    Don't have an account? <a class="  text-blue" routerLink="/register">Sign Up</a>
+                  <div class="mt-2">
+                    <p class="text-center text-blue">
+                    <small class="text-muted">
+                      Don't have an account? <a routerLink="/register" style="color:#60D143; text-decoration: none;">Sign Up</a>
+                    </small>
+                  </p>
                   </div>
-      
-                  <br><br>
+                  <br>
                   <p class="text-center text-blue">Or continue with</p>
                   <div class="icons text-center">
                     <img src="./assets/google.png" style="height:20px;margin-right: 15px;">
