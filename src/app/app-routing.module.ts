@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'adminlog', component: AdminlogComponent},
   { path: 'adminsign', component: AdminsignComponent},
-  { path: 'user-dashboard', component: UserDashboardComponent},
+  { path: 'user-dashboard/:id', component: UserDashboardComponent},
   { path: 'admin-dashboard', component: AdminDashboardComponent},
   { path: '', redirectTo:"/home", pathMatch:"full"},
   { path:'**', component: NotFoundComponent},

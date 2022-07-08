@@ -45,11 +45,13 @@
                       <input [(ngModel)]="login.password" type="password" class="mt-2 form-control" name="password" placeholder="Password"  class="form-control rounded-pill border-0 shadow-sm px-4">
                     </div>
                     <div class="mb-3 text-center">
-                      <button (click)="loginUser();" type="submit" class="button-26 text-uppercase mb-2">Log In</button>
-
+                      <button  (click)="loginUser();" type="submit" class="button-26 text-uppercase mb-2">Log In</button>
                       </div>                  
       
                   </div>
+
+                  <a href="" routerLink="/user-dashboard/{{login.id}}"></a>
+
 
                   </form>
                   <br><br>
